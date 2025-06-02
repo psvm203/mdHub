@@ -2,20 +2,24 @@ use yew::prelude::*;
 
 #[function_component]
 fn App() -> Html {
-    let counter = use_state(|| 0);
-    let onclick = {
-        let counter = counter.clone();
-        move |_| {
-            let value = *counter + 1;
-            counter.set(value);
-        }
+    let markdown_icon: Html = html! {
+        <img src="images/markdown.png" />
+    };
+
+    let credit: Html = html! {
+        <footer role="contentinfo">
+            <a href={"https://www.flaticon.com/free-icons/markdown"}
+                title="markdown icon">
+                {"Markdown icon created by Muhammad Andy - Flaticon"}
+            </a>
+        </footer>
     };
 
     html! {
-        <div>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
-        </div>
+        <>
+            {markdown_icon}
+            {credit}
+        </>
     }
 }
 
