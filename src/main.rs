@@ -10,7 +10,10 @@ fn App() -> Html {
 
     let introduction: Html = html! {
         <p class={"py-6"}>
-            {"mdHub lets you open, edit, and commit Markdown files directly from your GitHub repositories.
+            <a class={"link"} href={"https://github.com/psvm203/mdHub"}>
+                {"mdHub"}
+            </a>
+            {" lets you open, edit, and commit Markdown files directly from your GitHub repositories.
                 Works seamlessly in your browser with real-time editing and instant preview."}
         </p>
     };
