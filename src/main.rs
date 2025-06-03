@@ -19,7 +19,8 @@ fn App() -> Html {
     };
 
     let login_button: Html = html! {
-        <button class={"btn btn-primary"}>
+        <button class={"btn bg-black text-white border-black"}>
+            <img class={"w-6"} src={"images/github-mark-white.svg"} />
             {"Continue with GitHub"}
         </button>
     };
