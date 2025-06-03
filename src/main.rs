@@ -8,13 +8,17 @@ fn App() -> Html {
         </div>
     };
 
+    let title: Html = html! {
+        <h1 class={"text-5xl font-bold"}>{"Edit your Markdown files."}</h1>
+    };
+
     let introduction: Html = html! {
         <p class={"py-6"}>
             <a class={"link"} href={"https://github.com/psvm203/mdHub"}>
                 {"mdHub"}
             </a>
-            {" lets you open, edit, and commit Markdown files directly from your GitHub repositories.
-                Works seamlessly in your browser with real-time editing and instant preview."}
+            {" is a web-based tool designed to simplify working with Markdown files in your GitHub repositories.
+                You can browse, edit, preview, and commit Markdown files with ease."}
         </p>
     };
 
@@ -30,7 +34,7 @@ fn App() -> Html {
             <div class={"hero-content flex-col lg:flex-row"}>
                 {markdown_icon}
                 <div class={"max-w-md"}>
-                    <h1 class={"text-5xl font-bold"}>{"mdHub"}</h1>
+                    {title}
                     {introduction}
                     {login_button}
                 </div>
