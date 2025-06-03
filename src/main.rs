@@ -22,7 +22,7 @@ fn App() -> Html {
     };
 
     let hero: Html = html! {
-        <div class={"hero bg-base-200 min-h-screen"}>
+        <div class={"hero bg-base-200 min-h-[95vh]"}>
             <div class={"hero-content flex-col lg:flex-row"}>
                 {markdown_icon}
                 <div class={"max-w-md"}>
@@ -35,7 +35,7 @@ fn App() -> Html {
     };
 
     let credit: Html = html! {
-        <footer class={"footer sm:footer-horizontal footer-center bg-base-200 text-base-content p-4"}
+        <footer class={"footer sm:footer-horizontal footer-center bg-base-300 text-base-content min-h-[5vh]"}
             role="contentinfo">
             <a href={"https://www.flaticon.com/free-icons/markdown"}
                 title="markdown icon">
