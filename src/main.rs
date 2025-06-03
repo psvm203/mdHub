@@ -4,7 +4,7 @@ use yew::prelude::*;
 fn App() -> Html {
     let markdown_icon: Html = html! {
         <div class={"max-w-sm"}>
-            <img class={"w-64"} src="images/markdown.png" />
+            <img class={"w-64"} src={"images/markdown.png"} />
         </div>
     };
 
@@ -39,9 +39,9 @@ fn App() -> Html {
 
     let credit: Html = html! {
         <footer class={"footer sm:footer-horizontal footer-center bg-base-300 text-base-content min-h-[5vh]"}
-            role="contentinfo">
+            role={"contentinfo"}>
             <a href={"https://www.flaticon.com/free-icons/markdown"}
-                title="markdown icon">
+                title={"markdown icon"}>
                 {"Markdown icon created by Muhammad Andy - Flaticon"}
             </a>
         </footer>
